@@ -8,11 +8,14 @@ public class DogYears {
       boolean quit = false;
 
       while (quit == false) {
+        System.out.println("Input your dog's age in human years.");
+        System.out.println("Input a number less than or equal to 0 to quit.");
         dogYears = scnr.nextInt();
         humanYears = 7 * dogYears;
 
         if (dogYears <= 0) {
             quit = true;
+            System.out.println("Goodbye! See you next time!");
             break;
         }
 
@@ -21,6 +24,7 @@ public class DogYears {
             System.out.print(" dog years is about ");
             System.out.print(humanYears);
             System.out.println(" human years.");
+            System.out.println();
         }
       }
       
